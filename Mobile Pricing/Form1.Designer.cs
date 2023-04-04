@@ -84,6 +84,8 @@
             "iPhone/Android Battery",
             "iPhone Charging Port",
             "Android Charging Port",
+            "iPad Screen/Battery",
+            "iPad Charging Port",
             "Other"});
             this.cmbLabor.Location = new System.Drawing.Point(81, 39);
             this.cmbLabor.Name = "cmbLabor";
@@ -150,7 +152,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.wBrowser.CreationProperties = null;
             this.wBrowser.DefaultBackgroundColor = System.Drawing.Color.White;
-            this.wBrowser.Location = new System.Drawing.Point(206, 39);
+            this.wBrowser.Location = new System.Drawing.Point(206, 38);
             this.wBrowser.Name = "wBrowser";
             this.wBrowser.Size = new System.Drawing.Size(409, 281);
             this.wBrowser.Source = new System.Uri("https://www.google.com", System.UriKind.Absolute);

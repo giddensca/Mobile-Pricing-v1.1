@@ -109,6 +109,11 @@ namespace Mobile_Pricing
                                 PriceHelper(Convert.ToDouble(price), Convert.ToDouble(price) > 100 ? 0.80 : 0.70, 90);
                                 break;
                             case 5:
+                                //Sends the Method PriceHelper the found price from HTML as a double, then uses a ternary operator to decide which markup value to use
+                                //As well as sending along the labor price
+                                PriceHelper(Convert.ToDouble(price), Convert.ToDouble(price) > 25 ? 0.80 : 0.70, 120);
+                                break;
+                            case 6:
                                     string labor =
                                         Microsoft.VisualBasic.Interaction.InputBox(
                                             "Please Enter a Labor value for the repair below.", "Custom Labor Value", "60");
@@ -116,7 +121,7 @@ namespace Mobile_Pricing
                                     {
                                         labor.Trim('$');
                                     }
-
+                                    
                                     PriceHelper(Convert.ToDouble(price), Convert.ToDouble(price) > 250 ? 0.85 : 0.75,
                                         Convert.ToDouble(labor));
                                     break;
